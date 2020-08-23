@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TyBanner">
+        <attr name="bannerIsNeedShowBackGround" format="boolean" /> <!-- 是否显示title的背景颜色 默认true -->
+        <attr name="bannerIsAutoLoop" format="boolean" /> <!-- 是否自动循环播放 默认true -->
+        <attr name="bannerIsShowTitleByView" format="boolean" /> <!-- 是否显示title和半透明背景 默认true -->
+
+        <attr name="bannerIntervalTime" format="integer" /> <!-- 切换间隔时间 默认3000毫秒 -->
+        <attr name="bannerScrollTime" format="integer" /> <!-- 滑动时间 默认1000毫秒 -->
+
+        <attr name="bannerTitleTextSize" format="dimension|reference" /> <!-- title字体大小 默认14dp -->
+        <attr name="bannerTitleTextMarginTop" format="dimension|reference" /> <!-- title 距离半透明背景上边边距 默认10dp -->
+        <attr name="bannerTitleTextMarginBottom" format="dimension|reference" /> <!-- title 距离半透明背景下边边距 默认10dp -->
+        <attr name="bannerTitleTextStartMargin" format="dimension|reference" /> <!-- title距离屏幕开始的距离 默认12dp -->
+
+        <attr name="bannerIndicatorEndMargin" format="dimension|reference" /> <!-- 指示器前后边距 默认15dp -->
+        <attr name="bannerIndicatorMargin" format="dimension|reference" /> <!-- 指示器之间空隙距离 默认 8dp -->
+        <attr name="bannerIndicatorRadiu" format="dimension|reference" /> <!-- 指示器半径 默认 5dp -->
+
+        <attr name="bannerTitleTextColor" format="color|integer" /> <!-- titleTextColor 默认 Color.RED -->
+        <attr name="bannerIndicatorSelectColor" format="color|integer" /> <!-- 用户选中之后指示器颜色 默认 Color.WHITE -->
+        <attr name="bannerIndicatorUnSelectColor" format="color|integer" /> <!-- 用户未选中指示器颜色 默认 Color.RED -->
+
+        <attr name="bannerPageScrollMode"> <!-- banner 滚动的默认方式 默认为横向 -->
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="bannerTitleMode">
+            <enum name="marquee" value="0" /> <!-- 默认 title过长使用跑马灯效果 -->
+            <enum name="end" value="1" /> <!-- title过长时以...结尾 -->
+            <enum name="middle" value="2" /> <!-- title过长使以...在中间显示 -->
+            <enum name="start" value="3" /> <!-- title过长使以...在开头显示 -->
+        </attr>5
+
+        <attr name="bannerIndicatorStyle"> <!-- banner指示器类型 默认是圆形指示器 可切换进度条指示器 -->
+            <enum name="circle" value="0"/>
+            <enum name="progress" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>
